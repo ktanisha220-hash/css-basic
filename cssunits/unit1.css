@@ -1,0 +1,65 @@
+
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+}
+html,body{
+    min-height:100vh;
+    width:100%;
+}
+/*.box{
+    height:500px;
+    width:500px;
+    background-color:lightblue;
+    font-size
+    
+}*/
+/*
+.box1{
+    height:20em;
+    width:20rem;
+    background-color:lightgreen;
+}
+after
+.box1{
+    width:25rem;
+    height:25rem;
+    transition:width 2s, height 4s;
+}
+a{
+    text-decoration:none;
+    color:blue;
+    font-size:50px;
+
+}
+a::before{
+    content:"";
+    width:0px;
+    height:100%;
+    position:absolute;
+    background-color:blue;
+    transition:width 2s;
+}*/
+.box{
+    width:100%;
+    min-height: 100vh;
+    background-color:lightblue;
+
+}
+.box>div{
+    width:100%;
+    min-height: 20%;
+background-color:lightgreen;
+    border:1px solid black;
+}
+h1+p{
+    color:red;
+}
+h1~p,h1{
+    font-size:40px;
+    color:blue;
+}
+.box1:has(h1){
+    background-color:lightgreen;
+}
