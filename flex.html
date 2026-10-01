@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="flex.css">
+    </head>
+<style>
+    *{
+        margin:0px;
+        padding:0px;
+    }
+    .container{
+        border:2px solid bisque;
+        height: 100vh;
+        background-color: pink;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:20px;
+        }
+        .box{
+            border:1px solid pink;
+            height: 100px;
+            width: 100px;
+            background-color:crimson;
+            border-radius: 10px;
+        }
+        .box1{
+            border:1px solid pink;
+            height: 100px;
+            width: 100px;
+            background-color: crimson;
+            border-radius: 10px;
+
+        }
+        .box2{
+            border:1px solid pink;
+            height: 100px;
+            width: 100px;
+            background-color: crimson;
+            border-radius: 10px;
+        }
+    </style>
+    <body>
+        <div class="container">
+            <div class="box">
+                <div class="inner-box"></div>
+                <div class="inner-box"></div>
+                <div class="inner-box"></div>
+            </div>
+            <div class="box1">
+                <div class="inner-box"></div>
+                <div class="inner-box"></div>
+                <div class="inner-box"></div>
+            </div>
+            <div class="box2">
+                <div class="inner box">
+                <div class="inner-box"></div>
+                <div class="inner-box"></div>
+            </div>
+        </div>
+    </body>
+</html>
