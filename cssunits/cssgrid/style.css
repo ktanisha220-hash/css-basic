@@ -10,11 +10,12 @@ html,body{
 .gridTable{
     display:grid;
     grid-template-columns:repeat(4,200px);
-    grid-template-rows:200px 200px 200px;
+    grid-template-rows:100px 200px 200px 100px;
+    grid-template-areas:"a a a"
+                        "b c e"
+                        "b d e"
+                        "f f f";
     gap:20px;
-    grid-template-areas:"a b b c"
-                        "a d e f"
-                        "a g h f";
 }
 .box1{
     background-color:lightblue;
@@ -35,8 +36,9 @@ html,body{
 }
 .box3{
     background-color:lightgreen;
-    grid-row:2/4;
+    /*grid-row:2/4;
     grid-column:4/5;
+    grid-area:c;*/
     grid-area:c;
 }
 .box4{
@@ -58,6 +60,6 @@ html,body{
     grid-area:g;
 }
 .box8{
-    background-color:lightsteelblue;
+    background-color:red;
     grid-area:h;
 }
