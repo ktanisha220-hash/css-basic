@@ -1,0 +1,12 @@
+.flex{
+    flex-direction: flex;;
+}
+.align-center{
+    align-items:center;
+}
+.justify-content{
+    justify-content: center;
+}
+.width-overlay{
+    width: 90%;
+}

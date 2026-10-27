@@ -1,0 +1,40 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height:100%;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: antiquewhite;
+}
+.box{
+    width: 350px;
+    height: 350px;
+    background-color:rgb(232, 180, 204);
+    background-image:url("https://plus.unsplash.com/premium_photo-1792744636958-3ff66a2a6352?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D");
+    animation: sliding 2s ease 4 backwards;
+    background-size: cover;
+}
+/* .box:hover{
+    animation: sliding 2s ease 4 ;
+} */
+@keyframes sliding{
+    0%{
+        transform:translateX(0px) rotate(90deg);
+    }
+    20%{
+        transform: translateX(200px);
+    }
+    50%{
+        transform: translateX(0px);
+    }
+    100%{
+        transform: translateY(200px);
+    }
+}
